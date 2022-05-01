@@ -1,26 +1,23 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <div class="navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/detail" routerLinkActive="active">Detail</a>
-        </li>
-        <div class="d-lg-flex" *ngIf="isAdmin">
-        <li>
-          <a class="nav-link" href="#">Create Product</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">Product List</a>
-        </li>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border">
+    <div class="container-fluid">
+      <div class="navbar-collapse ">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/detail" routerLinkActive="active">Detail</a>
+          </li>
+          <li class="nav-item" *ngIf="isAdmin">
+            <a class="nav-link" href="#">Create Product</a>
+          </li>
+          <li class="nav-item" *ngIf="isAdmin">
+            <a class="nav-link" href="#">Product List</a>
+          </li>
+        </ul>
+        <app-search></app-search>
       </div>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>

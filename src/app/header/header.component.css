@@ -1,0 +1,21 @@
+.border {
+    border-color:blueviolet !important;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+li.nav-item a.nav-link {
+    padding: 1rem 2rem;
+}
