@@ -1,0 +1,8 @@
+<button (click)="getPokemons()">Pokemons</button>
+<div class="container-fluid">
+    <div class="row gx-0 justify-content-center">
+        <div class="col" *ngFor="let pokemon of pokemons">
+            <app-pokemon-detail [pokemon]="pokemon"></app-pokemon-detail>
+        </div>
+    </div>
+</div>
